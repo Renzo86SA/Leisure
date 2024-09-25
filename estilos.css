@@ -531,6 +531,9 @@ footer{
 
     .imagen-port {
         width: 45%;
+        min-height: 300px;
+        object-fit: cover;
+        display: block;
     }
     #searchInput, #productList, table {
         width: 70%;
