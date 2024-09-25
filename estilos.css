@@ -425,3 +425,215 @@ footer{
 .whatsapp-float:hover {
     background-color: #075e54;
 }
+/* Código responsive unificado */
+
+/* Para pantallas menores a 1024px (tablets en orientación horizontal o pequeña) */
+@media (max-width: 1024px) {
+    /* Ajustes para el header */
+    header {
+        height: 60vh; /* Ajuste del tamaño del encabezado */
+    }
+
+    .textos-header h1 {
+        font-size: 40px; /* Ajuste del tamaño del texto */
+    }
+
+    .textos-header h2 {
+        font-size: 25px;
+    }
+
+    /* Ajustes para la sección sobre nosotros */
+    main .contenedor-sobre-nosotros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .contenedor-sobre-nosotros .imagen-about-us {
+        width: 60%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    main .contenedor-sobre-nosotros .sobre-nosotros .contenido-textos {
+        width: 80%;
+        margin: 0;
+    }
+    #searchInput, #productList, table {
+        width: 50%;
+    }
+    .subtitulo {
+        font-size: 40px;
+    }
+    
+    .linea-division {
+        width: 70%;
+    }
+    
+    .carousel .carousel-item {
+        width: 250px;
+        height: 250px;
+    }
+
+    footer .contenedor-footer {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    footer .content-foo {
+        margin-bottom: 30px;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+/* Para pantallas menores a 768px (tablets en orientación vertical y móviles grandes) */
+@media (max-width: 768px) {
+    /* Ajustes para el header */
+    header {
+        height: 50vh; /* Reducimos el tamaño del header */
+    }
+
+    .textos-header h1 {
+        font-size: 35px; /* Reducimos el tamaño de los textos */
+    }
+
+    .textos-header h2 {
+        font-size: 20px;
+    }
+
+    header .menu > a {
+        font-size: 14px; /* Hacemos el menú más pequeño */
+        margin-right: 5px; /* Ajustamos los márgenes del menú */
+    }
+
+    header .logo {
+        width: 80px; /* Reducimos el tamaño del logo */
+    }
+    /* Ajustes para la sección sobre nosotros */
+    main .contenedor-sobre-nosotros .imagen-about-us {
+        width: 80%;
+    }
+
+    main .contenedor-sobre-nosotros .sobre-nosotros .contenido-textos {
+        width: 90%;
+    }
+
+    /* Ajustes para la galería de servicios */
+    .galeria-port {
+        justify-content: space-around;
+    }
+
+    .imagen-port {
+        width: 45%;
+    }
+    #searchInput, #productList, table {
+        width: 70%;
+    }
+    .subtitulo {
+        font-size: 35px;
+    }
+
+    .carousel .carousel-item {
+        width: 200px;
+        height: 200px;
+    }
+
+    .whatsapp-float {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Para pantallas menores a 480px (móviles pequeños) */
+@media (max-width: 480px) {
+    /* Ajustes para el header */
+    header {
+        height: 40vh; /* Aún más pequeño en móviles */
+    }
+
+    .textos-header h1 {
+        font-size: 28px; /* Texto más pequeño */
+    }
+
+    .textos-header h2 {
+        font-size: 18px;
+    }
+
+    header .menu {
+        display: block; /* Mostrar el menú en columna en pantallas móviles */
+        text-align: center;
+    }
+
+    header .menu > a {
+        display: block; /* Cada enlace del menú en una nueva línea */
+        margin: 5px 0;
+    }
+
+    header .logo {
+        width: 60px; /* Reducimos aún más el tamaño del logo */
+    }
+
+    /* Ajustes para la sección sobre nosotros */
+    main .contenedor-sobre-nosotros .imagen-about-us {
+        width: 100%;
+    }
+
+    main .contenedor-sobre-nosotros .sobre-nosotros .contenido-textos {
+        width: 100%;
+    }
+
+    /* Ajustes para la galería de servicios */
+    .galeria-port {
+        justify-content: center;
+    }
+
+    .imagen-port {
+        width: 100%;
+    }
+
+    /* Ajustes para el texto dentro de la galería */
+    .texto-servicio {
+        font-size: 10px;
+        height: 100px; /* Reducimos altura en móviles */
+    }
+    #searchInput, #productList, table {
+        width: 90%;
+    }
+
+    /* Reducimos el tamaño de fuente del texto de los servicios */
+    .texto-servicio {
+        font-size: 10px;
+        height: 100px; /* Reducimos altura en móviles */
+    }
+    .subtitulo {
+        font-size: 28px;
+    }
+    
+    .linea-division {
+        width: 60%;
+    }
+    
+    .carousel .carousel-item {
+        width: 150px;
+        height: 150px;
+    }
+
+    footer .contenedor-footer {
+        padding-bottom: 20px;
+    }
+
+    .whatsapp-float {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
